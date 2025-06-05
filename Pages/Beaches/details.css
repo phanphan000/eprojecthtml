@@ -1,0 +1,572 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* css media */
+/* Đổi màu primary khi hover vào số điện thoại, email, icon social media và icon tìm kiếm */
+.topbar-link:hover,
+.topbar-link:focus,
+.social-icon:hover,
+.social-icon:focus,
+#searchBtn:hover,
+#searchBtn:focus {
+    color: var(--bs-primary) !important;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* css cho phần header */
+.nav-item.dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+    transition: transform 0.4s ease;
+}
+
+.nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+.custom-hover:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-icon {
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in-out, color 0.3s ease;
+    color: inherit;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.nav-item.dropdown:hover>.nav-link,
+.nav-item.dropdown:hover>.nav-link .dropdown-icon {
+    color: red;
+}
+
+.nav-link-hover:hover {
+    color: red !important;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu {
+    border: 1px solid #ccc;
+    border-top: 3px solid red;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .dropdown-item {
+    border-bottom: 1px solid #eee;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #1d0aee;
+}
+
+nav.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 444444;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* bo tròn logo */
+.botron {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+/* css cho header để cuộn trang */
+nav.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 444444;
+    background-color: white;
+    /* Đảm bảo header có nền để không bị trong suốt */
+}
+
+/* ------------------------------------------------------------------------------- */
+/* css banner */
+/* css cho banner img */
+.contact-banner {
+    background-image: url('/assets/img1/Aqva+Pool+Bar+Beach+Side.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    overflow: visible;
+}
+
+.contact-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.contact-banner h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Ảnh brush viền dưới */
+.brush-bottom {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* css cho phần chi tiết bài viết */
+
+.main-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.rating-stars {
+    color: #ffc107;
+}
+
+.category-tag {
+    background-color: #007bff;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.author-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.recent-post-item {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.recent-post-img {
+    width: 60px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.social-btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.google {
+    background-color: #dd4b39;
+}
+
+.pinterest {
+    background-color: #bd081c;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.instagram {
+    background-color: #e4405f;
+}
+
+.comment-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reply-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #6c757d;
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-left: 4px solid #007bff;
+}
+
+.tag-hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tag-hover:hover {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+.social-icon-hover {
+    transition: all 0.3s ease;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.social-icon-hover:hover {
+    color: #007bff !important;
+    transform: scale(1.2);
+}
+
+/* phần cmt */
+.comment-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #007cba;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #007cba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.comment-author {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.comment-date {
+    color: #666;
+    font-size: 14px;
+}
+
+.comment-text {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.reply-button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 30px !important;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.reply-button:hover {
+    background: #ff5252;
+}
+
+/* Form Styles */
+.reply-section h2 {
+    color: #1a365d;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.form-note {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+}
+
+.required {
+    color: #e53e3e;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.1);
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background: #ff5252;
+}
+
+.submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #e53e3e;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------------------------------------------------------------- */
+/* css cho phần footer */
+.footer-section {
+    background-color: #33373a;
+    /* Màu nền tối tương tự ảnh */
+    color: #fff;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    /* Độ dài đường gạch dưới */
+    background-color: var(--bs-primary);
+    /* Sử dụng màu primary của Bootstrap */
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-contact-list li,
+.footer-latest-post li {
+    margin-bottom: 10px;
+}
+
+.footer-contact-list li i {
+    color: var(--bs-primary);
+    /* Màu icon tương tự ảnh */
+}
+
+.footer-latest-post a {
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s ease;
+}
+
+.footer-latest-post a:hover {
+    color: var(--bs-primary);
+    /* Màu hover */
+}
+
+.footer-latest-post .text-muted {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.footer-subscribe-form .form-control {
+    border-radius: 4px;
+    /* Bo tròn input */
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+.footer-subscribe-form .btn-subscribe {
+    background-color: #e84133;
+    /* Màu nút subscribe */
+    border-color: #e84133;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-subscribe-form .btn-subscribe:hover {
+    background-color: #c83125;
+    /* Màu hover nút subscribe */
+    border-color: #c83125;
+}
+
+.footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-links li a {
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: var(--bs-primary);
+    /* Màu hover */
+}
+
+.footer-links li {
+    vertical-align: middle;
+}
+
+@media (max-width: 767.98px) {
+    .footer-title {
+        margin-top: 20px;
+    }
+
+    .footer-badges img {
+        max-width: 60px !important;
+    }
+}
+
+.botron {
+    border-radius: 50%;
+    width: 50px;
+    /* Chiều rộng của logo */
+    height: 50px;
+    /* Chiều cao của logo */
+    overflow: hidden;
+    /* Đảm bảo nội dung không tràn ra ngoài */
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/Pages/Contact/contact.css">
+</head>
+
+<body>
+    <!-- Social media container -->
+    <div class="container-fluid border-bottom">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex align-items-center flex-wrap text-secondary gap-3">
+                    <span><i class="bi bi-telephone me-1"></i> <a href="tel:+01977259912"
+                            class="text-secondary text-decoration-none topbar-link">+01 (977) 2599 12</a></span>
+                    <span><i class="bi bi-envelope me-1"></i> <a href="mailto:company@domain.com"
+                            class="text-secondary text-decoration-none topbar-link">aptechvn.com</a></span>
+                    <span><i class="bi bi-geo-alt me-1"></i>175 chuaboc, dongda , hanoi</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-dark me-3 fs-5 social-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-dark me-3 fs-5 social-icon"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-dark me-3 fs-5 social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-dark me-4 fs-5 social-icon"><i class="bi bi-linkedin"></i></a>
+                    <span class="border-end me-3" style="height: 24px;"></span>
+                    <a href="#" class="text-dark fs-5" id="searchBtn"><i class="bi bi-search"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header container -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Phần 1: Logo + brand + toggler -->
+            <div class="d-flex align-items-center">
+                <img src="/assets/img1/logo_beach.jpg" alt="Logo" width="50" class="botron me-2" />
+                <a class="navbar-brand fw-bold custom-hover me-3" href="#">Beautiful Beaches</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Phần 2: Menu, đẩy ra giữa container -->
+            <div class="collapse navbar-collapse mx-auto" id="navbarNav" style="flex: 0 1 auto;">
+                <ul class="navbar-nav d-flex align-items-center gap-3 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-link-hover" href="/index/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between fw-bold"
+                            href="#" id="navDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                            <i class="bi bi-caret-down-fill ms-1 dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu border-top-red" aria-labelledby="navDropdown">
+                            <li><a class="dropdown-item"
+                                    href="/Pages/Explore/explore.html?region=Northern%20Vietnam">Northern Beaches</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="/Pages/Explore/explore.html?region=Central%20Vietnam">Central Beaches</a></li>
+                            <li><a class="dropdown-item"
+                                    href="/Pages/Explore/explore.html?region=Southern%20Vietnam">Southern Beaches</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-link-hover" href="/Pages/Gallery/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between fw-bold"
+                            href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                            <i class="bi bi-caret-down-fill ms-1 dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu border-top-red" aria-labelledby="contactDropdown">
+                            <li><a class="dropdown-item" href="/Pages/Contact/contact.html">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="/Pages/Queries/queries.html">Queries</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-link-hover" href="/Pages/About/about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Phần 3: nút Buy Now -->
+            <div>
+                <a href="/Pages/Explore/explore.html" class="btn btn-danger fw-bold">Buy Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- banner contact -->
+    <section class="contact-banner mb-5">
+        <div class="overlay">
+            <h1 id="banner-title">Contact us</h1>
+        </div>
+        <img src="/assets/img1/aa.png" alt="" class="brush-bottom" />
+    </section>
+
+
+    <!-- Main 1 content -->
+    <main class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Section -->
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-4">
+                        <div style="width: 60px; height: 2px; background-color: red; margin-right: 10px;"></div>
+                        <p class="text-danger fw-bold">CONTACT</p>
+                    </div>
+                    <h1 class="fw-bold">GET IN TOUCH WITH US</br> FOR MORE INFORMATION</h1>
+                    <p class="text-muted small">
+                        We are always ready to listen and assist you in planning your perfect beach vacation.
+                        Contact us for detailed consultation about our beach tours and services.
+                    </p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name*" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email*" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message*" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-20">SUBMIT MESSAGE</button>
+                    </form>
+                </div>
+
+                <!-- Right Section -->
+                <div class="col-md-6 p-5">
+                    <h5 class="fw-bold">Need assistance? Get in touch with us!</h5>
+                    <p class="text-muted small">
+                        Our support team is always ready to assist you</br>
+                        24/7 to ensure you have a perfect beach holiday.
+                    </p>
+                    <p class="text-muted small">
+                        We are committed to bringing you the best experiences</br>
+                        at the most beautiful beaches in Vietnam.
+                    </p>
+                    <div class="contact-info">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-geo-alt-fill text-primary fs-4 me-3"></i>
+                            <div>
+                                <h6 class="fw-bold">Address</h6>
+                                <p class="text-muted m-0"> 175 chuaboc, dongda , hanoi</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-envelope-fill text-primary fs-4 me-3"></i>
+                            <div>
+                                <h6 class="fw-bold">Email</h6>
+                                <p class="text-muted m-0">aptechvn.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-telephone-fill text-primary fs-4 me-3"></i>
+                            <div>
+                                <h6 class="fw-bold">Phone</h6>
+                                <p class="text-muted m-0">Landline: (028) 1234 5678 / Mobile: 0912 345 678</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="fw-bold mt-4">Follow us on social media..</h6>
+                    <div class="social-icons">
+                        <a href="#" class="text-danger me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-danger me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-danger me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-danger"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Map Section -->
+    <section id="contact">
+        <!-- Google Map Embed -->
+        <div class="map-container rounded shadow" style="overflow:hidden; height:400px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19805.71280111444!2d-0.1363986!3d51.501364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604a2be6aa1ff%3A0xd4e70f3ea220f3f9!2sRiverside%20Building%2C%20County%20Hall!5e0!3m2!1sen!2suk!4v1716270139646!5m2!1sen!2suk"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+
+
+    <!-- Footer container -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Travel -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="footer-title">ABOUT TRAVEL</h5>
+                    <p class="footer-text">
+                        Explore the world with us. We offer the best travel experiences tailored to your dreams and
+                        comfort.
+                    </p>
+                    <div class="footer-badges d-flex gap-3">
+                        <img src="/assets/img1/logo_footer1.png" alt="Travvy Award" class="img-fluid"
+                            style="max-width: 80px;">
+                        <img src="/assets/img1/logo_footer2.png" alt="Nature Magazine" class="img-fluid"
+                            style="max-width: 100px;">
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="footer-title">CONTACT INFORMATION</h5>
+                    <ul class="list-unstyled footer-contact-list">
+                        <li><i class="bi bi-telephone me-2"></i> +01 (977) 2599 12</li>
+                        <li><i class="bi bi-envelope me-2"></i> aptechvn.com</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> 175 chuaboc, dongda , hanoi</li>
+                    </ul>
+                </div>
+
+                <!-- Latest Post -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="footer-title">LATEST POST</h5>
+                    <ul class="list-unstyled footer-latest-post">
+                        <li>
+                            <a href="#" class="text-white text-decoration-none">Life is a beautiful journey not a
+                                destination</a>
+                            <div class="small text-muted">May 17, 2025 | No Comments</div>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none">Take only memories, leave only
+                                footprints</a>
+                            <div class="small text-muted">May 17, 2025 | No Comments</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Subscribe Us -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">SUBSCRIBE US</h5>
+                    <p class="footer-text">
+                        Stay updated with our latest travel offers and blog posts.
+                    </p>
+                    <form class="footer-subscribe-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email.."
+                                aria-label="Your Email..">
+                        </div>
+                        <button class="btn btn-subscribe w-100" type="submit">SUBSCRIBE NOW</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="footer-divider my-4">
+
+            <!-- Bottom Bar -->
+            <div class="d-flex justify-content-between">
+                <div class="col-md-4">
+                    <ul class="list-inline footer-links m-0">
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Privacy
+                                Policy</a>
+                        </li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Term &
+                                Condition</a></li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center mt-3 mt-md-0">
+                    <span class="text-white me-3 fw-bold"><img src="/assets/img1/logo_beach.jpg" alt="Travele"
+                            width="50" class="botron me-2"> Beautiful Beaches</span>
+                </div>
+                <p class="text-white">&copy; Copyright 2021 Travele. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/Pages/Contact/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

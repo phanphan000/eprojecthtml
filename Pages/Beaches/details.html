@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/Pages/Beaches/details.css">
+</head>
+
+<body>
+    <!-- Social media container -->
+    <div class="container-fluid border-bottom">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex align-items-center flex-wrap text-secondary gap-3">
+                    <span><i class="bi bi-telephone me-1"></i> <a href="tel:+01977259912"
+                            class="text-secondary text-decoration-none topbar-link">+01 (977) 2599 12</a></span>
+                    <span><i class="bi bi-envelope me-1"></i> <a href="mailto:company@domain.com"
+                            class="text-secondary text-decoration-none topbar-link">aptechvn.com</a></span>
+                    <span><i class="bi bi-geo-alt me-1"></i>175 chuaboc, dongda , hanoi</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-dark me-3 fs-5 social-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-dark me-3 fs-5 social-icon"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-dark me-3 fs-5 social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-dark me-4 fs-5 social-icon"><i class="bi bi-linkedin"></i></a>
+                    <span class="border-end me-3" style="height: 24px;"></span>
+                    <a href="#" class="text-dark fs-5" id="searchBtn"><i class="bi bi-search"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header container -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Phần 1: Logo + brand + toggler -->
+            <div class="d-flex align-items-center">
+                <img src="/assets/img1/logo_beach.jpg" alt="Logo" width="50" class="botron me-2" />
+                <a class="navbar-brand fw-bold custom-hover me-3" href="#">Beautiful Beaches</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Phần 2: Menu, đẩy ra giữa container -->
+            <div class="collapse navbar-collapse mx-auto" id="navbarNav" style="flex: 0 1 auto;">
+                <ul class="navbar-nav d-flex align-items-center gap-3 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-link-hover" href="/index/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between fw-bold"
+                            href="#" id="navDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                            <i class="bi bi-caret-down-fill ms-1 dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu border-top-red" aria-labelledby="navDropdown">
+                            <li><a class="dropdown-item"
+                                    href="/Pages/Explore/explore.html?region=Northern%20Vietnam">Northern Beaches</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="/Pages/Explore/explore.html?region=Central%20Vietnam">Central Beaches</a></li>
+                            <li><a class="dropdown-item"
+                                    href="/Pages/Explore/explore.html?region=Southern%20Vietnam">Southern Beaches</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-link-hover" href="/Pages/Gallery/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between fw-bold"
+                            href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                            <i class="bi bi-caret-down-fill ms-1 dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu border-top-red" aria-labelledby="contactDropdown">
+                            <li><a class="dropdown-item" href="/Pages/Contact/contact.html">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="/Pages/Queries/queries.html">Queries</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold nav-link-hover" href="/Pages/About/about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Phần 3: nút Buy Now -->
+            <div>
+                <a href="/Pages/Explore/explore.html" class="btn btn-danger fw-bold">Buy Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- banner container -->
+    <section class="contact-banner mb-5">
+        <div class="overlay">
+            <h1 id="banner-title">Beach Details</h1>
+        </div>
+        <img src="/assets/img1/aa.png" alt="" class="brush-bottom" />
+    </section>
+
+
+
+    <!-- section 1 -->
+    <section class="container mb-5">
+        <div class="row">
+            <!-- Content chính -->
+            <div class="col-lg-8">
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+
+                    <!-- Hình ảnh chính -->
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop"
+                        alt="Beach scene" class="main-image mb-3">
+
+                    <!-- Tiêu đề và rating -->
+                    <h2 class="fw-bold mb-2"></h2>
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Nội dung -->
+                    <p class="text-muted">
+
+                    </p>
+
+                    <!-- Quote -->
+                    <div class="quote-text">
+                        <em></em>
+                    </div>
+
+                    <p class="text-muted">
+
+                    </p>
+
+                    <!-- Tags -->
+                    <div class="mb-4">
+
+                        <i class="bi bi-tags-fill"></i>
+                        <span class="badge bg-light text-dark me-2 tag-hover"></span>
+                        <span class="badge bg-light text-dark me-2 tag-hover"></span>
+                        <span class="badge bg-light text-dark me-2 tag-hover"></span>
+                        <span class="badge bg-light text-dark me-2 tag-hover"></span>
+                        <span class="badge bg-light text-dark tag-hover"></span>
+                    </div>
+
+                    <!-- Social Share -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <a href="#" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="#" class="social-btn google">
+                            <i class="fab fa-google"></i> Google+
+                        </a>
+                        <a href="#" class="social-btn pinterest">
+                            <i class="fab fa-pinterest"></i> Pinterest
+                        </a>
+                        <a href="#" class="social-btn linkedin">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="#" class="social-btn twitter">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                    </div>
+
+                    <!-- Author info -->
+                    <div class="author-card">
+                        <div class="d-flex gap-3">
+                            <img src="https://demo.bosathemes.com/html/travele/assets/images/user-img.png" alt="Author"
+                                class="author-avatar">
+                            <div>
+                                <h5 class="mb-1">Author</h5>
+                                <p class="text-muted mb-2">
+                                    Discover stunning beaches, travel tips, and hidden gems across Vietnam. Explore
+                                    inspiring stories and beautiful seaside experiences.
+                                </p>
+                                <a href="#" class="text-primary">VIEW ALL POSTS »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h4 class="mb-4"></h4>
+                    <div id="comments-container"></div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Author Card -->
+                <div class="author-card mb-4">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <a href="#" class="category-tag">ABOUT AUTHOR</a>
+                        </div>
+                        <img src="https://demo.bosathemes.com/html/travele/assets/images/img21.jpg" alt="..."
+                            class="author-avatar mb-3">
+                        <h5>James Watson</h5>
+                        <p class="text-muted small">
+                            James is a travel writer and beach enthusiast who has explored over 50 coastal destinations
+                            across Southeast Asia.
+                            With a passion for storytelling and photography, he shares hidden gems, cultural insights,
+                            and practical travel tips
+                            to help others plan unforgettable seaside adventures!!
+                        </p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" class="text-muted social-icon-hover"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-muted social-icon-hover"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-muted social-icon-hover"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-muted social-icon-hover"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-muted social-icon-hover"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Posts -->
+                <div class="bg-white p-3 rounded shadow-sm mb-4">
+                    <h6 class="border-bottom pb-2 mb-3">RECENT POSTS</h6>
+
+                    <div class="recent-post-item">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=120&h=90&fit=crop"
+                            alt="Post" class="recent-post-img">
+                        <div>
+                            <h6 class="mb-1 fs-6">Normally I'm going to be free and available to plan.</h6>
+                            <small class="text-muted">August 17, 2020 | by Demokeam19</small>
+                        </div>
+                    </div>
+
+                    <div class="recent-post-item">
+                        <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=120&h=90&fit=crop"
+                            alt="Post" class="recent-post-img">
+                        <div>
+                            <h6 class="mb-1 fs-6">Exploring the beauty of the great nature</h6>
+                            <small class="text-muted">August 17, 2020 | by Demokeam19</small>
+                        </div>
+                    </div>
+
+                    <div class="recent-post-item">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=120&h=90&fit=crop"
+                            alt="Post" class="recent-post-img">
+                        <div>
+                            <h6 class="mb-1 fs-6">Let's start adventure with local tour guide</h6>
+                            <small class="text-muted">August 17, 2020 | by Demokeam19</small>
+                        </div>
+                    </div>
+
+                    <div class="recent-post-item">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=120&h=90&fit=crop"
+                            alt="Post" class="recent-post-img">
+                        <div>
+                            <h6 class="mb-1 fs-6">Planning to go ideal measured to new places</h6>
+                            <small class="text-muted">August 17, 2020 | by Demokeam19</small>
+                        </div>
+                    </div>
+
+                    <div class="recent-post-item border-0">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=120&h=90&fit=crop"
+                            alt="Post" class="recent-post-img">
+                        <div>
+                            <h6 class="mb-1 fs-6">Take only memories, leave only footprints</h6>
+                            <small class="text-muted">August 17, 2020 | by Demokeam19</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="bg-white p-3 rounded shadow-sm">
+                    <h6 class="border-bottom pb-2 mb-3">SOCIAL LINKS</h6>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <a href="#" class="social-btn facebook w-100 justify-content-center">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="social-btn pinterest w-100 justify-content-center">
+                                <i class="fab fa-pinterest"></i> Pinterest
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="social-btn twitter w-100 justify-content-center">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="social-btn linkedin w-100 justify-content-center">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="social-btn google w-100 justify-content-center">
+                                <i class="fab fa-google"></i> Google+
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="social-btn instagram w-100 justify-content-center">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section 2 -->
+    <section class="container mb-5">
+        <!-- Success Message (hidden by default) -->
+        <div id="success-message" class="success-message col-lg-8" style="display: none;">
+            Comment đã được gửi thành công!
+        </div>
+
+        <!-- Reply Form Section -->
+        <div class="reply-section col-lg-8">
+            <h2>Leave a Reply</h2>
+            <p class="form-note">
+                Your email address will not be published. Required fields are marked <span class="required">*</span>
+            </p>
+
+            <form id="comment-form">
+                <div class="form-group">
+                    <label for="comment">Comment <span class="required">*</span></label>
+                    <textarea id="comment" name="comment" required placeholder="Nhập bình luận của bạn..."></textarea>
+                    <div class="error" id="comment-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Nhập tên của bạn">
+                    <div class="error" id="name-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="Nhập email của bạn">
+                    <div class="error" id="email-error"></div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submit-btn">Post comment</button>
+            </form>
+        </div>
+
+    </section>
+
+
+    <!-- Footer container -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Travel -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="footer-title">ABOUT TRAVEL</h5>
+                    <p class="footer-text">
+                        Explore the world with us. We offer the best travel experiences tailored to your dreams and
+                        comfort.
+                    </p>
+                    <div class="footer-badges d-flex gap-3">
+                        <img src="/assets/img1/logo_footer1.png" alt="Travvy Award" class="img-fluid"
+                            style="max-width: 80px;">
+                        <img src="/assets/img1/logo_footer2.png" alt="Nature Magazine" class="img-fluid"
+                            style="max-width: 100px;">
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="footer-title">CONTACT INFORMATION</h5>
+                    <ul class="list-unstyled footer-contact-list">
+                        <li><i class="bi bi-telephone me-2"></i> +01 (977) 2599 12</li>
+                        <li><i class="bi bi-envelope me-2"></i> aptechvn.com</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> 175 chuaboc, dongda , hanoi</li>
+                    </ul>
+                </div>
+
+                <!-- Latest Post -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="footer-title">LATEST POST</h5>
+                    <ul class="list-unstyled footer-latest-post">
+                        <li>
+                            <a href="#" class="text-white text-decoration-none">Life is a beautiful journey not a
+                                destination</a>
+                            <div class="small text-muted">May 17, 2025 | No Comments</div>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none">Take only memories, leave only
+                                footprints</a>
+                            <div class="small text-muted">May 17, 2025 | No Comments</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Subscribe Us -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">SUBSCRIBE US</h5>
+                    <p class="footer-text">
+                        Stay updated with our latest travel offers and blog posts.
+                    </p>
+                    <form class="footer-subscribe-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email.."
+                                aria-label="Your Email..">
+                        </div>
+                        <button class="btn btn-subscribe w-100" type="submit">SUBSCRIBE NOW</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="footer-divider my-4">
+
+            <!-- Bottom Bar -->
+            <div class="d-flex justify-content-between">
+                <div class="col-md-4">
+                    <ul class="list-inline footer-links m-0">
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Privacy
+                                Policy</a>
+                        </li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Term &
+                                Condition</a></li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center mt-3 mt-md-0">
+                    <span class="text-white me-3 fw-bold"><img src="/assets/img1/logo_beach.jpg" alt="Travele"
+                            width="50" class="botron me-2"> Beautiful Beaches</span>
+                </div>
+                <p class="text-white">&copy; Copyright 2021 Travele. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script defer src="/Pages/Beaches/details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
